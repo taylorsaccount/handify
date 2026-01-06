@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+
+}
+
+canvas {
+  display: block;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; 
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #000000;
+  font-family:monospace;
+  font-size: 1vw;
+  font-weight: 300;
+  overflow-y: scroll;
+  height: 40%;
+  color: white;
+  text-align: left;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #ffffff;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+::-webkit-scrollbar{
+  box-shadow: inset  0 0 1px 2px rgb(255, 255, 255); 
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(92, 92, 92, 0.603);
+  box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+  border-radius: 0px;
+  cursor: pointer;
+}
+ 
+
+
+p{
+  padding: 2%;
+}
+p.title{
+  display: flex;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.contains{
+  text-align: end;
+}
+.buttons{
+    position: relative;
+    text-align:center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5vw;
+    border-bottom-style: solid;
+
+}
+
+
+.close {
+  color: #ffffff;
+  
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 191);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.open {
+  color: #ffffff;
+  float: right;
+  position: fixed;
+  right: 1%;
+  font-size: 3vw;
+  font-weight: bold;
+  padding:0; 
+  margin:0;
+  border:0;
+  background-color:transparent;
+}
+
+.open:hover,
+.open:focus {
+  color: rgb(255, 0, 191);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#buttonSound{
+  color: #ffffff;
+  font-size: 1.5vw;
+  padding:0; 
+  margin:0;
+  border:0;
+  background-color:transparent;
+}
+
+#buttonSound:hover,
+#buttonSound:focus {
+  color: rgb(255, 0, 191);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.howTo{
+      max-width: -webkit-fill-available;
+}
+
+a:link {
+  color: black;
+  background-color: white;
+  text-decoration:none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 191);
+  background-color: transparent;
+  text-decoration: none;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handify</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://unpkg.com/tone"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <link rel="icon" type="image/x-icon" href="/image.png">
+    <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script>
+   
+  </head>
+
+  <body>
+	<!-- Trigger/Open The Modal -->
+<button class="open" id="myBtn">&#128948;</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    
+    <div class="buttons">
+      <p class="title">Handify Live Music Controller</p> 
+      
+      <div class="contains">
+    <button id="buttonSound" >&#9654;</button>
+    <span class="close">&#128941;</span>
+    </div>
+  </div>
+    <p>
+
+
+<br>
+Handify is an ml5 based music controller, allowing you to play with a self made track using your hand position. <br>
+To get started:<br>
+Click the play button<br>
+control the tracks with your left hand, control effects with your right hand. Both as depicted.<br>
+<img class="howTo" src="illustrationfordatavis.png">
+<br>
+Handify is written with p5js, tonejs and ml5.
+<br>
+Created by Taylor Noelle Kovacevic.
+Track by <a href="https://on.soundcloud.com/IiFxZUiPoMqd7f6oyt">@Safarri</a>
+
+<br>
+For the github link click <a href="https://github.com/taylorsaccount/handify">here.</a>
+
+	</p>
+  </div>
+
+</div>
+
+
+
+<!--     UI ELEMENTS
+ -->
+<div id="spectro"></div>
+
+
+
+<!-- END OF UI
+ -->     
+	<script src="model.js"></script>
+    <script src="hands.js"></script>
+    <script src="sound.js"></script> 
+	<script src="sketch.js"></script>  
+   <script src="spectro.js"></script> 
+    
+  </body>
+</html>
