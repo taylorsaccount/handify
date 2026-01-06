@@ -77,7 +77,7 @@ function draw() {
       fill("white")
       textFont(font);
       textSize(20)
-    text('track2', -940, -110)
+    text('track2', -windowWidth/2.4, -110)
      translate(0, 0)
     for (let i = 0; i < spectrum.length; i++) {
     var angle = map(i, 0, spectrum.length, 0, 360)
@@ -89,7 +89,7 @@ function draw() {
     noFill()
     stroke(255)
     
-    circle(-910,0, ampl)
+    circle(-windowWidth/2.5,10, ampl)
   }
   
 pop()
@@ -101,7 +101,7 @@ pop()
       fill("white")
       textFont(font);
       textSize(20)
-    text('track3', 800, -110)
+    text('track3', windowWidth/2.9, -110)
      translate(0, 0)
     for (let i = 0; i < spectrum.length; i++) {
     var angle = map(i, 0, spectrum.length, 0, 360)
@@ -112,7 +112,7 @@ pop()
     var y = r * sin(angle);
     noFill()
     stroke(255)
-    rect(910,80, ampl)
+    rect(windowWidth/2.5,80, ampl)
   }
   
 pop()
@@ -124,8 +124,8 @@ pop()
       fill("white")
       textFont(font);
       textSize(20)
-      text('crusher', -30, 450)
-      rect(-5, 350, 10, 50)
+      text('crusher', 0-25, windowHeight/3)
+      rect(0, windowHeight/2.5, 10, 50)
       if (currentEffect !== crusher) {
         if (currentEffect) {
           effectBus.disconnect(currentEffect);
@@ -143,8 +143,8 @@ pop()
       fill("white")
       textFont(font);
       textSize(20)
-      text('cheby', 830, 450)
-      rect(845, 350, 10, 50)
+      text('cheby', windowWidth/2.8, windowHeight/3)
+      rect(windowWidth/2.7, windowHeight/2.5, 10, 50)
       if (currentEffect !== cheby) {
         if (currentEffect) {
           effectBus.disconnect(currentEffect);
@@ -162,8 +162,8 @@ pop()
       fill("white")
       textFont(font);
       textSize(20)
-      text('phaser', -930, 450)
-      rect(-910, 350, 10, 50)
+      text('phaser', -windowWidth/2.45, windowHeight/3)
+      rect(-windowWidth/2.5, windowHeight/2.5, 10, 50)
       if (currentEffect !== phaser) {
         if (currentEffect) {
           effectBus.disconnect(currentEffect);

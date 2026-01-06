@@ -152,3 +152,17 @@ a:hover {
   background-color: transparent;
   text-decoration: none;
 }
+
+@media (max-width: 1900px) {
+  .buttons{
+    position: relative;
+    text-align:left;
+    align-items: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5vw;
+    border-bottom-style: solid;
+
+}
+
+}
